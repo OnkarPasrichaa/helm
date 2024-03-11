@@ -1,11 +1,10 @@
 replicaCount: 1
 
 image:
-  repository: onkarpasrichaa/python-app
+  repository: onkarpasrichaa/python_app
   tag: latest
   pullPolicy: IfNotPresent
 
 service:
-  name: python-app
   type: ClusterIP
   port: 5000
