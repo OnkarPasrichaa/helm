@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: onkarpasrichaa/nodejs-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  name: nodejs-app
+  type: ClusterIP
+  port: 3000
