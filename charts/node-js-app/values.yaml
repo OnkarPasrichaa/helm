@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: onkarpasrichaa/nodejs-app
-  tag: latest
+  tag: 20240311094802
   pullPolicy: IfNotPresent
 
 service:
