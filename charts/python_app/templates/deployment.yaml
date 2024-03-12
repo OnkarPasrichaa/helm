@@ -15,8 +15,8 @@ spec:
         app: {{ .Values.service.name }}
     spec:
       containers:
-        - name: {{ .Chart.Name }}
+        - name: "hi Python"
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
+         #imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 5000
