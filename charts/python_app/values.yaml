@@ -6,5 +6,6 @@ image:
   pullPolicy: IfNotPresent
 
 service:
+  name: python-app
   type: ClusterIP
   port: 5000
