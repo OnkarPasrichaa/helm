@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: onkarpasrichaa/python_app
-  tag: 
+  tag: 94355a8868ae4138b099321e6631e1638a4d3034
   pullPolicy: IfNotPresent
 
 service:
