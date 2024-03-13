@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "nodejs-app.fullname" . }}
+  name: {{ .Values.service.name }}
   labels:
-    app: {{ include "nodejs-app.name" . }}
+    app: {{ .Values.service.name }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ include "nodejs-app.name" . }}
+      app: {{ .Values.service.name }}
   template:
     metadata:
       labels:
-        app: {{ include "nodejs-app.name" . }}
+        app: {{ .Values.service.name }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
