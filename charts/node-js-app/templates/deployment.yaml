@@ -17,7 +17,7 @@ spec:
       tolerations:
       - key: "app"
         operator: "Equal"
-        value: "python"
+        value: "nodejs"
         effect: "NoSchedule"
       containers:
         - name: {{ .Chart.Name }}
