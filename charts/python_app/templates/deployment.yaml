@@ -14,6 +14,11 @@ spec:
       labels:
         app: {{ .Values.service.name }}
     spec:
+      tolerations:
+      - key: "app"
+        operator: "Equal"
+        value: "python"
+        effect: "NoSchedule"
       containers:
         - name: "hi"
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
